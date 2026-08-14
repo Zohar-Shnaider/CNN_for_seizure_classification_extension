@@ -1,17 +1,11 @@
-# Bonn EEG Replication — Acharya et al. (2018)
+# Acharya et al. (2018) Replication and Extension 
 
 Exact reproduction of the 13-layer CNN for 3-class EEG classification
-(normal / preictal / seizure) on the Bonn University database.
+(normal / preictal / seizure) on the Bonn University database, in addition to two extensions.
 
 ## Expected results
 
 The paper reports: **88.67% accuracy, 95.00% sensitivity, 90.00% specificity**.
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Data placement
 
@@ -108,9 +102,6 @@ python plot_ext1.py
 ```
 
 - **FFT** — magnitude of the real FFT (log scale)
-
-All are resampled to 4097 points so the identical CNN architecture accepts
-them without modification.
 
 
 ## Extension 2: Which Frequencies Carry the Signal?
